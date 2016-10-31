@@ -19,7 +19,7 @@ namespace SimpleSample
         [SetUp]
         public void BeforeEachTest()
         {
-            app = AppManager.StartApp(platform);
+            app = new AppManager().StartApp(platform);
         }
 
         [Test]

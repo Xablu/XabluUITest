@@ -1,17 +1,34 @@
 ﻿<Properties StartupConfiguration="{77066EF6-39DC-4974-863E-2D58777EB50D}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="test/Screens/Screen.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sample/SimpleSample/AppManager.cs">
     <Files>
-      <File FileName="test/ScreenObjectManager.cs" Line="42" Column="10" />
-      <File FileName="test/Interfaces/IAppManager.cs" Line="10" Column="9" />
-      <File FileName="Sample/SimpleSample/Tests.cs" Line="22" Column="30" />
-      <File FileName="Sample/SimpleSample/AppManager.cs" Line="12" Column="36" />
-      <File FileName="test/Screens/Screen.cs" Line="33" Column="13" />
-      <File FileName="test/Screens/ScreenManager.cs" Line="1" Column="1" />
+      <File FileName="Sample/SimpleSample/Tests.cs" Line="40" Column="1" />
+      <File FileName="Sample/SimpleSample/AppManager.cs" Line="7" Column="2" />
+      <File FileName="Sample/SimpleSample/Screens/LoginScreen.cs" Line="7" Column="34" />
+      <File FileName="ScreenObjectXUI/Screens/Screen.cs" Line="8" Column="5" />
+      <File FileName="ScreenObjectXUI/ScreenObjectInitialize.cs" Line="1" Column="26" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ScreenObjectXUI" expanded="True">
+            <Node name="ScreenObjectXUI" expanded="True">
+              <Node name="packages.config" selected="True" />
+            </Node>
+            <Node name="SimpleSample" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Screens" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/Marc/Projects/ScreenObjectXUI/test/ScreenObjectManager.cs" line="26" column="1" />
+      <Breakpoint file="/Users/Marc/Projects/ScreenObjectXUI/Sample/SimpleSample/AppManager.cs" line="15" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.SimpleSample PreferredExecutionTarget="MonoDevelop.Default" />

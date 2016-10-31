@@ -7,3 +7,5 @@
 /Users/Marc/Projects/ScreenObjectXUI/Sample/SimpleSample/bin/Debug/nunit.framework.dll
 /Users/Marc/Projects/ScreenObjectXUI/Sample/SimpleSample/bin/Debug/test.dll
 /Users/Marc/Projects/ScreenObjectXUI/Sample/SimpleSample/bin/Debug/test.dll.mdb
+/Users/Marc/Projects/ScreenObjectXUI/Sample/SimpleSample/bin/Debug/ScreenObjectXUI.dll
+/Users/Marc/Projects/ScreenObjectXUI/Sample/SimpleSample/bin/Debug/ScreenObjectXUI.dll.mdb

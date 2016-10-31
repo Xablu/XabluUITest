@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSample", "Sample\SimpleSample\SimpleSample.csproj", "{77066EF6-39DC-4974-863E-2D58777EB50D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenObjectXUI", "test\ScreenObjectXUI.csproj", "{BFF9903C-EA85-4894-BA7A-4B60AADCA46E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenObjectXUI", "ScreenObjectXUI\ScreenObjectXUI.csproj", "{BFF9903C-EA85-4894-BA7A-4B60AADCA46E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -6,14 +6,10 @@ using ScreenObjectXUI;
 
 namespace AppWijzer.Tests.UITest
 {
-    public class AppManager : ScreenObjectManager
+    public class AppManager : ScreenObjectInitialize
     {
         static string AndroidPath = "";
         static string IOSPath = "";
-
-        public AppManager(IApp app, Platform platform) : base(app, platform)
-        {
-        }
 
         public override AndroidApp ConfigureAndroid(bool clearData)
         {
@@ -52,6 +48,5 @@ namespace AppWijzer.Tests.UITest
 					.StartApp(clearData ? AppDataMode.Auto : AppDataMode.DoNotClear);
             }
         }
-
     }
 }
