@@ -8,7 +8,7 @@ namespace ScreenObjectXUI.Utils
 	public static class ScreenExtensions
 	{
 		public static TScreen Screen<TScreen>(this IApp app)
-			where TScreen : IScreen, new()
+			where TScreen : IScreen
 		{
 			using (var scope = ScreenObjectInitialize.IocContainer.BeginLifetimeScope())
 			{
