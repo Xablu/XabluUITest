@@ -27,19 +27,16 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="nunit.framework">
-      <HintPath>..\..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+      <HintPath>..\..\packages\NUnit.3.6.0\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.UITest">
-      <HintPath>..\..\packages\Xamarin.UITest.2.0.0\lib\Xamarin.UITest.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.UITest.2.0.5\lib\Xamarin.UITest.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Tests.cs" />
     <Compile Include="Screens\LoginScreen.cs" />
     <Compile Include="AppManager.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Screens\" />
@@ -49,6 +46,9 @@
       <Project>{BFF9903C-EA85-4894-BA7A-4B60AADCA46E}</Project>
       <Name>ScreenObjectXUI</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
