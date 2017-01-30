@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{77066EF6-39DC-4974-863E-2D58777EB50D}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>SimpleSample</RootNamespace>
+    <RootNamespace>ScreenObjectXUI.Samples.SimpleSample</RootNamespace>
     <AssemblyName>SimpleSample</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>

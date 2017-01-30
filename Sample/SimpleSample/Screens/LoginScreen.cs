@@ -1,18 +1,16 @@
 ﻿using System;
 using ScreenObjectXUI.Screens;
-using Xamarin.UITest.Queries;
 
-namespace SimpleSample
+namespace ScreenObjectXUI.Samples.SimpleSample
 {
     public class LoginScreen : Screen
     {
-        public LoginScreen()
-        {
-        }
+		public override Trait Trait => new Trait("test");
 
-        protected override Func<AppQuery, AppQuery> IsScreenVisibleQuery()
-        {
-            return e => e.Marked("test");
-        }
+		public LoginScreen Login(string username, string password)
+		{
+			// TODO: Put logic to test login functionality.
+			throw new NotImplementedException();
+		}
     }
 }

@@ -2,9 +2,8 @@
 using Xamarin.UITest.Configuration;
 using Xamarin.UITest.Android;
 using Xamarin.UITest.iOS;
-using ScreenObjectXUI;
 
-namespace AppWijzer.Tests.UITest
+namespace ScreenObjectXUI.Samples.SimpleSample
 {
     public class AppManager : ScreenObjectInitialize
     {
