@@ -1,8 +1,7 @@
-﻿using AppWijzer.Tests.UITest;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Xamarin.UITest;
 
-namespace SimpleSample
+namespace ScreenObjectXUI.Samples.SimpleSample
 {
     [TestFixture(Platform.Android)]
     [TestFixture(Platform.iOS)]

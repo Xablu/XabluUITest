@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BFF9903C-EA85-4894-BA7A-4B60AADCA46E}</ProjectGuid>
+    <ProjectGuid>{0CC6B3E7-3561-440D-84C9-CDE2049BF1F7}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>test</RootNamespace>
-    <AssemblyName>ScreenObjectXUI</AssemblyName>
+    <RootNamespace>ScreenObjectXUI.Samples.DISample</RootNamespace>
+    <AssemblyName>DISample</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -17,40 +17,50 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="Xamarin.UITest">
-      <HintPath>..\packages\Xamarin.UITest.2.0.5\lib\Xamarin.UITest.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.UITest.2.0.5\lib\Xamarin.UITest.dll</HintPath>
     </Reference>
     <Reference Include="Autofac">
-      <HintPath>..\packages\Autofac.4.3.0\lib\net45\Autofac.dll</HintPath>
+      <HintPath>..\..\packages\Autofac.4.3.0\lib\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Utils\AppExtensions.cs" />
-    <Compile Include="Utils\StringContainsComparer.cs" />
-    <Compile Include="ScreenObjectInitialize.cs" />
-    <Compile Include="Screens\Screen.cs" />
-    <Compile Include="Screens\ScreenManager.cs" />
-    <Compile Include="Interfaces\IAppManager.cs" />
-    <Compile Include="Utils\ScreenExtensions.cs" />
-    <Compile Include="Screens\Trait.cs" />
-    <Compile Include="Interfaces\IScreen.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Utils\" />
-    <Folder Include="Screens\" />
-    <Folder Include="Interfaces\" />
+    <Compile Include="Tests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AppManager.cs" />
+    <Compile Include="Screens\ILoginScreen.cs" />
+    <Compile Include="Screens\Android\LoginScreenAndroid.cs" />
+    <Compile Include="Screens\iOS\LoginScreenIos.cs" />
+    <Compile Include="Screens\Shared\LoginScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ScreenObjectXUI\ScreenObjectXUI.csproj">
+      <Project>{BFF9903C-EA85-4894-BA7A-4B60AADCA46E}</Project>
+      <Name>ScreenObjectXUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Screens\" />
+    <Folder Include="Screens\Android\" />
+    <Folder Include="Screens\iOS\" />
+    <Folder Include="Screens\Shared\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

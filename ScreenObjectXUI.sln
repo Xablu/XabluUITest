@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSample", "Sample\Simp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenObjectXUI", "ScreenObjectXUI\ScreenObjectXUI.csproj", "{BFF9903C-EA85-4894-BA7A-4B60AADCA46E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{3A83F0E9-B61F-4169-93F0-9CFADAFCB11A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DISample", "Sample\DISample\DISample.csproj", "{0CC6B3E7-3561-440D-84C9-CDE2049BF1F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +23,13 @@ Global
 		{BFF9903C-EA85-4894-BA7A-4B60AADCA46E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFF9903C-EA85-4894-BA7A-4B60AADCA46E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFF9903C-EA85-4894-BA7A-4B60AADCA46E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CC6B3E7-3561-440D-84C9-CDE2049BF1F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CC6B3E7-3561-440D-84C9-CDE2049BF1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CC6B3E7-3561-440D-84C9-CDE2049BF1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CC6B3E7-3561-440D-84C9-CDE2049BF1F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77066EF6-39DC-4974-863E-2D58777EB50D} = {3A83F0E9-B61F-4169-93F0-9CFADAFCB11A}
+		{0CC6B3E7-3561-440D-84C9-CDE2049BF1F7} = {3A83F0E9-B61F-4169-93F0-9CFADAFCB11A}
 	EndGlobalSection
 EndGlobal
