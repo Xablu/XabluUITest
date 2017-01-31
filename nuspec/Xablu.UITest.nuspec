@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Xablu.UITest</id>
+        <version>1.0.3</version>
+        <title>UITest for Xamarin by Xablu</title>
+        <authors>Xablu</authors>
+        <owners>Xablu</owners>
+        <licenseUrl>https://github.com/Xablu/XabluUITest/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/Xablu/XabluUITest</projectUrl>
+        <iconUrl>https://raw.githubusercontent.com/Xablu/XabluUITest/master/icon_xablu.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Helpers for Xamarin UITest</description>
+        <summary>Helpers for Xamarin UITest</summary>
+        <tags>xamarin, monodroid, C#, xamarin.android, android, ios, uwp, Windows, tvOS, Mac, MacOS, UITest, Xablu</tags>
+        <dependencies>
+            <dependency id="Xamarin.UITest" version="2.0.5" />
+			<dependency id="Autofac" version="4.3.0" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\ScreenObjectXUI\bin\Release\ScreenObjectXUI.dll" target="lib\net45\ScreenObjectXUI.dll" />
+    </files>
+</package>
