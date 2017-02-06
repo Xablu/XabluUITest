@@ -67,7 +67,7 @@ Task("GitLink")
 	GitLink(sln.GetDirectory(), 
 		new GitLinkSettings {
 			RepositoryUrl = "https://github.com/Xablu/XabluUITest",
-			ArgumentCustomization = args => args.Append("-ignore DISample, SimpleSample")
+			ArgumentCustomization = args => args.Append("-ignore DISample,SimpleSample")
 		});
 });
 
