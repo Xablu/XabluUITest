@@ -32,7 +32,8 @@ namespace ScreenObjectXUI.Samples.DISample
 		public void Login()
 		{
 			app.Screen<ILoginScreen>()
-			   .Login("Test", "Test");
+			   .Login("Test", "Test")
+			   .Screenshot("Login");
 		}
 	}
 }

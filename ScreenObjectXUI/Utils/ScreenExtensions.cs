@@ -28,5 +28,15 @@ namespace ScreenObjectXUI.Utils
 				throw new Exception($"The {typeof(TScreen)} screen was not found.");
 			}
 		}
+
+		public static void Screenshot(this IScreen screen, string title)
+		{
+			screen.App.Screenshot(title);
+		}
+
+		public static void Screenshot(this IScreen screen, string format, params object[] args)
+		{
+			screen.App.Screenshot(format, args);
+		}
 	}
 }
