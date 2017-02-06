@@ -1,6 +1,6 @@
 ﻿using Query = System.Func<Xamarin.UITest.Queries.AppQuery, Xamarin.UITest.Queries.AppQuery>;
 
-namespace ScreenObjectXUI.Screens
+namespace Xablu.ScreenObjectXUI.Screens
 {
 	public class Trait
 	{

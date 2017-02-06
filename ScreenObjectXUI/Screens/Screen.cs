@@ -1,4 +1,4 @@
-namespace ScreenObjectXUI.Screens
+namespace Xablu.ScreenObjectXUI.Screens
 {
 	using System.Linq;
 	using QueryFunc = System.Func<Xamarin.UITest.Queries.AppQuery, Xamarin.UITest.Queries.AppQuery>;
@@ -7,7 +7,7 @@ namespace ScreenObjectXUI.Screens
 	using Xamarin.UITest;
 	using System;
 	using Autofac;
-	using ScreenObjectXUI.Interfaces;
+	using Xablu.ScreenObjectXUI.Interfaces;
 
 	public abstract class Screen : IScreen
     {

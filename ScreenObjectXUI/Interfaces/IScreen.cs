@@ -1,7 +1,7 @@
-﻿using ScreenObjectXUI.Screens;
+﻿using Xablu.ScreenObjectXUI.Screens;
 using Xamarin.UITest;
 
-namespace ScreenObjectXUI.Interfaces
+namespace Xablu.ScreenObjectXUI.Interfaces
 {
 	public interface IScreen
 	{

@@ -1,4 +1,4 @@
-﻿namespace ScreenObjectXUI
+﻿namespace Xablu.ScreenObjectXUI
 {
 	using System;
 	using Autofac;

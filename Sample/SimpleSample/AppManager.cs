@@ -3,7 +3,7 @@ using Xamarin.UITest.Configuration;
 using Xamarin.UITest.Android;
 using Xamarin.UITest.iOS;
 
-namespace ScreenObjectXUI.Samples.SimpleSample
+namespace Xablu.ScreenObjectXUI.Samples.SimpleSample
 {
     public class AppManager : ScreenObjectInitialize
     {

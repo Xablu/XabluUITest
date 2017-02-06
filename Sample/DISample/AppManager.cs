@@ -5,7 +5,7 @@ using Xamarin.UITest.iOS;
 using Autofac;
 using System;
 
-namespace ScreenObjectXUI.Samples.DISample
+namespace Xablu.ScreenObjectXUI.Samples.DISample
 {
 	public class AppManager : ScreenObjectInitialize
 	{

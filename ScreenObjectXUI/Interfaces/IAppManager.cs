@@ -1,4 +1,4 @@
-﻿namespace ScreenObjectXUI.Interfaces
+﻿namespace Xablu.ScreenObjectXUI.Interfaces
 {
     using Xamarin.UITest;
     using Xamarin.UITest.Android;

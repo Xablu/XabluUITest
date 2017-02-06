@@ -1,4 +1,4 @@
-﻿namespace ScreenObjectXUI.Utils
+﻿namespace Xablu.ScreenObjectXUI.Utils
 {
 	using System;
 	using System.Linq;

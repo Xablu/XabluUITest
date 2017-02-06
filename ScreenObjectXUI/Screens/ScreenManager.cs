@@ -1,4 +1,4 @@
-﻿namespace ScreenObjectXUI.Screens
+﻿namespace Xablu.ScreenObjectXUI.Screens
 {
     public class ScreenManager
     {
