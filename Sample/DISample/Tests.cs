@@ -1,8 +1,8 @@
-﻿using NUnit.Framework;
-using ScreenObjectXUI.Utils;
+using NUnit.Framework;
+using Xablu.ScreenObjectXUI.Utils;
 using Xamarin.UITest;
 
-namespace ScreenObjectXUI.Samples.DISample
+namespace Xablu.ScreenObjectXUI.Samples.DISample
 {
 	[TestFixture(Platform.Android)]
 	[TestFixture(Platform.iOS)]

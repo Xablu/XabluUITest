@@ -1,9 +1,9 @@
 ﻿using System;
-using ScreenObjectXUI.Interfaces;
+using Xablu.ScreenObjectXUI.Interfaces;
 using Xamarin.UITest;
 using Autofac;
 
-namespace ScreenObjectXUI.Utils
+namespace Xablu.ScreenObjectXUI.Utils
 {
 	public static class ScreenExtensions
 	{

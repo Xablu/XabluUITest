@@ -42,13 +42,13 @@
     <Folder Include="Screens\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ScreenObjectXUI\ScreenObjectXUI.csproj">
-      <Project>{BFF9903C-EA85-4894-BA7A-4B60AADCA46E}</Project>
-      <Name>ScreenObjectXUI</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\..\ScreenObjectXUI\Xablu.ScreenObjectXUI.csproj">
+      <Project>{BFF9903C-EA85-4894-BA7A-4B60AADCA46E}</Project>
+      <Name>Xablu.ScreenObjectXUI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,7 +1,7 @@
 ﻿using System;
-using ScreenObjectXUI.Screens;
+using Xablu.ScreenObjectXUI.Screens;
 
-namespace ScreenObjectXUI.Samples.SimpleSample
+namespace Xablu.ScreenObjectXUI.Samples.SimpleSample
 {
     public class LoginScreen : Screen
     {

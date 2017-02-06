@@ -1,7 +1,7 @@
-﻿using ScreenObjectXUI.Screens;
+﻿using Xablu.ScreenObjectXUI.Screens;
 using QueryFunc = System.Func<Xamarin.UITest.Queries.AppQuery, Xamarin.UITest.Queries.AppQuery>;
 
-namespace ScreenObjectXUI.Samples.DISample
+namespace Xablu.ScreenObjectXUI.Samples.DISample
 {
 	public class LoginShared
 		: Screen, ILoginScreen

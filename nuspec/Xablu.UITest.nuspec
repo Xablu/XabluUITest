@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Xablu.UITest</id>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
         <title>UITest for Xamarin by Xablu</title>
         <authors>Xablu</authors>
         <owners>Xablu</owners>
@@ -19,6 +19,6 @@
         </dependencies>
     </metadata>
     <files>
-        <file src="..\ScreenObjectXUI\bin\Release\ScreenObjectXUI.dll" target="lib\net45\ScreenObjectXUI.dll" />
+        <file src="..\ScreenObjectXUI\bin\Release\Xablu.ScreenObjectXUI.dll" target="lib\net45\Xablu.ScreenObjectXUI.dll" />
     </files>
 </package>

@@ -1,6 +1,6 @@
-﻿using ScreenObjectXUI.Interfaces;
+﻿using Xablu.ScreenObjectXUI.Interfaces;
 
-namespace ScreenObjectXUI.Samples.DISample
+namespace Xablu.ScreenObjectXUI.Samples.DISample
 {
 	public interface ILoginScreen
 		: IScreen

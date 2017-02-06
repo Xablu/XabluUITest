@@ -1,7 +1,7 @@
 #tool "nuget:?package=GitVersion.CommandLine"
 #tool "nuget:?package=gitlink"
 
-var sln = new FilePath("ScreenObjectXUI.sln");
+var sln = new FilePath("Xablu.ScreenObjectXUI.sln");
 var outputDir = new DirectoryPath("artifacts");
 var nuspecDir = new DirectoryPath("nuspec");
 var target = Argument("target", "Default");
@@ -67,7 +67,7 @@ Task("GitLink")
 	GitLink(sln.GetDirectory(), 
 		new GitLinkSettings {
 			RepositoryUrl = "https://github.com/Xablu/XabluUITest",
-			ArgumentCustomization = args => args.Append("-ignore DISample, SimpleSample")
+			ArgumentCustomization = args => args.Append("-ignore DISample,SimpleSample")
 		});
 });
 
