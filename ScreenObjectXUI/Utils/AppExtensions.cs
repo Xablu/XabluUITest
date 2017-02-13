@@ -20,20 +20,20 @@
             return app.Query(query).First();
         }
 
-		public static AppResult WaitForFirstElement(this IApp app, QueryFunc query)
-		{
-			return app.WaitForElement(query).First();
-		}
+        public static AppResult WaitForFirstElement(this IApp app, QueryFunc query)
+        {
+        	return app.WaitForElement(query).First();
+        }
 
-		public static AppResult WaitForLastElement(this IApp app, QueryFunc query)
-		{
-			return app.WaitForElement(query).Last();
-		}
+        public static AppResult WaitForLastElement(this IApp app, QueryFunc query)
+        {
+        	return app.WaitForElement(query).Last();
+        }
 
-		public static AppResult WaitForElementOnIndex(this IApp app, QueryFunc query, int index)
-		{
-			return app.WaitForElement(query)[index];
-		}
+        public static AppResult WaitForElementOnIndex(this IApp app, QueryFunc query, int index)
+        {
+        	return app.WaitForElement(query)[index];
+        }
 
         public static AppResult[] WaitForElementContainingText(this IApp app, string substring)
         {
