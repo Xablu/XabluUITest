@@ -6,6 +6,7 @@
 #addin nuget:?package=Cake.Git
 
 var sln = new FilePath("Xablu.ScreenObjectXUI.sln");
+var repoPath = new DirectoryPath("./");
 var outputDir = new DirectoryPath("artifacts");
 var nuspecDir = new DirectoryPath("nuspec");
 var target = Argument("target", "Default");
@@ -83,7 +84,7 @@ Task("UnitTest")
 	.IsDependentOn("Build")
 	.Does(() =>
 {
-
+	
 });
 
 Task("GitLink")
@@ -96,15 +97,16 @@ Task("GitLink")
 	.Does(() => 
 {
 	var projectsToIgnore = new string[] {
-		"DISample",
-		"SimpleSample"
+		"Sample",
+		"Sample.Droid",
+		"Sample.iOS"
 	};
 
 	GitLink("./", 
 		new GitLinkSettings {
-			RepositoryUrl = "https://github.com/Xablu/XabluUITest",
+			RepositoryUrl = "https://github.com/Xablu/Xablu.Adal",
 			Configuration = "Release",
-			SolutionFileName = "Xablu.ScreenObjectXUI.sln",
+			SolutionFileName = "src/Xablu.Adal.sln",
 			ArgumentCustomization = args => args.Append("-ignore " + string.Join(",", projectsToIgnore))
 		});
 });
@@ -119,9 +121,9 @@ Task("Package")
 	var nugetSettings = new NuGetPackSettings {
 		Authors = new [] { "Xablu" },
         Owners = new [] { "Xablu" },
-        IconUrl = new Uri("https://raw.githubusercontent.com/Xablu/XabluUITest/master/icon_xablu.png"),
-        ProjectUrl = new Uri("https://github.com/Xablu/XabluUITest"),
-        LicenseUrl = new Uri("https://github.com/Xablu/XabluUITest/blob/master/LICENSE"),
+        IconUrl = new Uri("https://raw.githubusercontent.com/Xablu/Xablu.Adal/master/icon_xablu.png"),
+        ProjectUrl = new Uri("https://github.com/Xablu/Xablu.Adal"),
+        LicenseUrl = new Uri("https://github.com/Xablu/Xablu.Adal/blob/master/LICENSE"),
         Copyright = "Copyright (c) Xablu",
         RequireLicenseAcceptance = false,
         Version = versionInfo.NuGetVersion,
@@ -133,7 +135,7 @@ Task("Package")
 	};
 
 	var nuspecs = new List<string> {
-		"Xablu.UITest.nuspec"
+		"Xablu.Adal.nuspec"
 	};
 
 	foreach(var nuspec in nuspecs)
@@ -145,7 +147,7 @@ Task("Package")
 Task("PublishPackages")
     .IsDependentOn("Package")
     .WithCriteria(() => !BuildSystem.IsLocalBuild)
-    .WithCriteria(() => IsRepository("Xablu/XabluUITest"))
+    .WithCriteria(() => IsRepository("Xablu/Xablu.Adal"))
     .WithCriteria(() => 
 		StringComparer.OrdinalIgnoreCase.Equals(versionInfo.BranchName, "develop") || 
 		IsMasterOrReleases())
@@ -219,7 +221,7 @@ bool IsRepository(string repoName)
 	{
 		try
 		{
-			var path = MakeAbsolute(sln).GetDirectory().FullPath;
+			var path = MakeAbsolute(repoPath).FullPath;
 			using (var repo = new LibGit2Sharp.Repository(path))
 			{
 				var origin = repo.Network.Remotes.FirstOrDefault(
@@ -238,7 +240,7 @@ bool IsRepository(string repoName)
 
 bool IsTagged()
 {
-	var path = MakeAbsolute(sln).GetDirectory().FullPath;
+	var path = MakeAbsolute(repoPath).FullPath;
 	using (var repo = new LibGit2Sharp.Repository(path))
 	{
 		var head = repo.Head;
