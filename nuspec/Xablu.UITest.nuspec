@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Xablu.UITest</id>
-        <version>1.0.4</version>
+        <version>$version$</version>
         <title>UITest for Xamarin by Xablu</title>
         <authors>Xablu</authors>
         <owners>Xablu</owners>
@@ -15,7 +15,7 @@
         <tags>xamarin, monodroid, C#, xamarin.android, android, ios, uwp, Windows, tvOS, Mac, MacOS, UITest, Xablu</tags>
         <dependencies>
             <dependency id="Xamarin.UITest" version="2.0.5" />
-			<dependency id="Autofac" version="4.3.0" />
+            <dependency id="Autofac" version="4.3.0" />
         </dependencies>
     </metadata>
     <files>
