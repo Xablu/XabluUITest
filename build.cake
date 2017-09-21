@@ -99,7 +99,9 @@ Task("GitLink")
 	var projectsToIgnore = new string[] {
 		"Sample",
 		"Sample.Droid",
-		"Sample.iOS"
+		"Sample.iOS",
+		"SimpleSample",
+		"DISample"
 	};
 
 	GitLink("./", 
