@@ -104,9 +104,9 @@ Task("GitLink")
 
 	GitLink("./", 
 		new GitLinkSettings {
-			RepositoryUrl = "https://github.com/Xablu/Xablu.Adal",
+			RepositoryUrl = "https://github.com/Xablu/XabluUITest",
 			Configuration = "Release",
-			SolutionFileName = "src/Xablu.Adal.sln",
+			SolutionFileName = "Xablu.ScreenObjectXUI.sln",
 			ArgumentCustomization = args => args.Append("-ignore " + string.Join(",", projectsToIgnore))
 		});
 });
@@ -121,9 +121,9 @@ Task("Package")
 	var nugetSettings = new NuGetPackSettings {
 		Authors = new [] { "Xablu" },
         Owners = new [] { "Xablu" },
-        IconUrl = new Uri("https://raw.githubusercontent.com/Xablu/Xablu.Adal/master/icon_xablu.png"),
-        ProjectUrl = new Uri("https://github.com/Xablu/Xablu.Adal"),
-        LicenseUrl = new Uri("https://github.com/Xablu/Xablu.Adal/blob/master/LICENSE"),
+        IconUrl = new Uri("https://raw.githubusercontent.com/Xablu/XabluUITest/master/icon_xablu.png"),
+        ProjectUrl = new Uri("https://github.com/Xablu/XabluUITest"),
+        LicenseUrl = new Uri("https://github.com/Xablu/XabluUITest/blob/master/LICENSE"),
         Copyright = "Copyright (c) Xablu",
         RequireLicenseAcceptance = false,
         Version = versionInfo.NuGetVersion,
@@ -135,7 +135,7 @@ Task("Package")
 	};
 
 	var nuspecs = new List<string> {
-		"Xablu.Adal.nuspec"
+		"Xablu.UITest.nuspec"
 	};
 
 	foreach(var nuspec in nuspecs)
@@ -147,7 +147,7 @@ Task("Package")
 Task("PublishPackages")
     .IsDependentOn("Package")
     .WithCriteria(() => !BuildSystem.IsLocalBuild)
-    .WithCriteria(() => IsRepository("Xablu/Xablu.Adal"))
+    .WithCriteria(() => IsRepository("Xablu/XabluUITest"))
     .WithCriteria(() => 
 		StringComparer.OrdinalIgnoreCase.Equals(versionInfo.BranchName, "develop") || 
 		IsMasterOrReleases())
